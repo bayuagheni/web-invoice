@@ -1,8 +1,0 @@
-[providers]
-php = {}
-
-[build]
-cmds = ['composer install --no-dev', 'php artisan config:cache', 'php artisan route:cache']
-
-[start]
-cmd = 'vendor/bin/heroku-php-apache2 public/'
